@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> lists</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+	.header_portion{
+		position: absolute;
+		top: 10px;
+		justify-content: center;
+		text-align: center;
+	}
+	span img{
+		opacity: 0.5;
+		clip-path: polygon(0 0,100% 0,100% 100%,0 85%);
+		height: 450px;
+		width: 100%;
+	}
+	
+	.top_section{
+		display:grid;
+		grid-template-columns: 30% 100%;
+
+	}
+	.top_section ul{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		
+	}
+	 a{
+	text-decoration: none;
+	}
+	li{
+/*		text-decoration: none;*/
+		list-style: none;
+	}
+	.end_section{
+		position: absolute;
+		left:300px;
+		/*justify-content: center;
+		text-align: center;
+		align-items: center;*/
+	}
+
+	.main1{
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		text-align: center;
+		background-color: #e6eeff;
+	}
+	.top{
+		background-color: #e6eeff;
+	}
+	
+	.main1 p{
+		font-size: 15px;
+	}
+	
+	.main3{
+		margin: 50px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px; 
+            align-content: center;   
+            align-self: center;
+/*            grid-column-gap: 30px;*/
+/*            background-color: whitesmoke;*/
+        }
+        .main3 div:first_child{
+        	grid-column: 1/2;
+        	grid-row:1/2 ;
+        }
+        .main3 div:nth_child(2){
+        	grid-column: 1/2;
+        	grid-row:2/3;
+        }
+        .main3 div:nth_child(3){
+       		grid-column: 2/3;
+        	grid-row:1/2;
+        }
+
+        .main3 div:nth_child(4){
+       		grid-column: 2/3;
+        	grid-row:2/3;
+        }
+        .main3 div:nth_child(5){
+       		grid-column: 3/4;
+        	grid-row:2/3;
+        }
+        	.main3 div:nth_child(6){
+       		grid-column: 3/4;
+        	grid-row:2/3;
+        }
+        .main3 img{
+        	width: 368px;
+        }
+       
+        .main3 div
+        {
+        	border: 1px groove;
+        }
+        
+    .main4{
+    background-color:#000066 ;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: white;
+	}
+
+	.main6{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 15px;
+		text-align: center;
+	}
+	.main7{
+		background-color: #e6eeff;		
+
+	}
+	.main8{
+		margin: 25px;
+		display: grid;
+		grid-template-columns:repeat(3, 1fr);
+		grid-gap: 15px;
+		text-align: center;
+		background-color: #e6eeff;		
+	}
+      
+	.main8 div
+        {
+
+        	box-shadow: 1px 2px 5px #888888;
+        	background-color: white;
+        }
+     .Footer_portion{
+     	background-color:#000066;
+     	display: grid;
+     	grid-template-columns: repeat(4, 1fr);
+     	color: white;
+     }
+
+     .Footer_portion h4{
+     	color: yellow;
+     }
+     .end_section button:hover{
+     	background-color: yellow;
+     }
+     footer{
+     	background-color:#000066;
+     }
+</style>
+</head>
+<body>
+	<section class="top">
+	<span>
+		<img src="../../pic/headerbg.jpg" height="30%">
+	</span>	 
+	<header class="header_portion">
+	
+    <section class="top_section">
+    	<div>
+        <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo"/>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>   
+    </section> 
+<section class="end_section">
+	<div>
+		<h1>BEST INSTITUTE FOR UI DEVELOPMENT</h1>
+		<p>AchieversIT- Provides A Wide Group Of Opportunities For Freshers And Experienced Candidate Who Can
+		Develop Their Skills And Build Their Career Oppurtunities Across Multiple Companies  </p><br>
+		<button>GET STARTED NOW</button>
+		<button>VIEW COURSES</button>
+	</div>
+</section>
+</header></section>
+<main>
+	<section class="main1">
+
+				<div>
+					
+					<i class="fa-solid fa-chalkboard-user"></i>
+					<h3>Professional Teachers</h3>
+					<p>Our Training practice are perfectly blended with options for effective elearing or online classrooms</p>
+
+				</div> 
+
+				<div>
+					
+					<i class="fa-solid fa-earth-americas"></i>
+					<h3>Learn anywhere Online</h3>
+					<p>We Provide you to learn anywhere online across the India</p>
+
+				</div> 
+
+
+				<div>
+					
+					<i class="fa-solid fa-graduation-cap"></i>
+					<h3>Graduate Certifications</h3>
+					<p>lorem ipsum dolor sit amet, Consectetur adiplsicingelit, Sed do eiusmod</p>
+
+				</div> 
+
+
+				<div>
+					
+					<i class="fa-solid fa-suitcase-rolling"></i>
+					<h3>Over 1000+</h3>
+					<p>lorem ipsum dolor sit amet, Consectetur adiplsicingelit, Sed do eiusmod</p>
+
+				</div>
+	</section>
+	<section class="main2">
+		<!-- <div class="div1"> -->
+
+				<h2 text align="center"> FEATURED COURSES</h2>
+				<p text align="center"> Achievers IT has build up a robust live instructor-led Internet preparing stage that permit learner to get prepared by the expert coaches and through self guied preparing programs. AIT incorporates learing condition combining traditional learing the board with the scoial associations and cooperative abilities to construct a branded and corporate learing arrangement that guides and expands commitments</p>
+				
+			<!-- </div> -->
+	</section>
+	<section class="main3">
+		
+		<div>
+						<img src="C:\Users\Admin\pic\pic1.jpg" >
+					
+								<h4 text align="center">UI & UX DEVELOPMENT</h4>
+								<p text align="center">With Achievers IT's UI Development Course in Bangalore, you will be able to master the concepts such as CSS3, CSS, HTML, Java Script, Bootstrap, HTML5, Jquery, Angular/ReactiS,etc.r</p>
+								<p text align="center">4 Months Course | 70 Classes | 8AM - 9AM</p>
+					
+				</div>
+
+				<div>
+				
+						<img src="C:\Users\Admin\pic\pic2.jpg">
+						<h4 text align="center">REACT JS DEVELOPMENT</h4>
+						<p text align="center">We taught in detailed explanations of what React JS is, why we use React JS, What is JSX, Unidirectional data flow, React Components, React Hooks and React Router, etc</p>
+						<p text align="center">1 Months Course | 30 Classes | 7AM - 8AM</p>
+				</div>
+
+				<div>
+						<img src="C:\Users\Admin\pic\pic3.jpg">
+						<h4 text align="center">ANGULAR DEVELOPMENT</h4>
+						<p text align="center">Angular is popular for making dynamic applications and its information official and reliance infusion includes altogether lessen the measure of code that should be composed.</p>
+						<p text align="center">2 Months Course | 40 Classes | 9AM - 10AM</p>
+				</div>
+
+				<div>
+						<img src="C:\Users\Admin\pic\pic4.jpg">
+						<h4 text align="center">REACT NATIVE</h4>
+						<p text align="center">React Native has created a lot of excitement in the IT industry because of its cross-platform nature Developers can reuse the code</p>
+						<p text align="center">2 Months Course | 10 Classes | 10AM - 11AM</p>
+				</div>
+
+				<div>
+						<img src="C:\Users\Admin\pic\pic5.jpg">
+						<h4 text align="center">MERN</h4>
+						<p text align="center">"MERN Stack Front To Back". In this course we will build an in deoth full stack social network applications using Node.js, Express, React,Redux and MongoDB along with ES6+</p>
+						<p text align="center">2 Months Course | 20 Classes | 3AM - 4AM</p>
+				</div>
+
+				<div>
+						<img src="C:\Users\Admin\pic\pic6.jpg">
+						<h4 text align=center>POWER BI TRAINING</h4>
+						<p text align="center">POWER BI TRAINING in marathahalli course allows you to learn how to find insights within an organization's data. Microsoft Power BI is a collection of apps.</p>
+						<p text align="center">2 Months Course | 10 Classes | 10AM - 11AM</p>
+				</div>
+			</section>
+
+				<section class="main4">
+		
+					<span>
+					<i class="fa-solid fa-clock-rotate-left"></i>
+					<p>967</p>
+					<p>YEAR OF HISTORY</p>
+					</span>
+				
+				
+			
+					<span>
+					<i class="fa-solid fa-graduation-cap"></i>
+					<p>967</p>
+					<p>ACTIVE STUDENTS</p>
+					</span>
+
+					<span>
+					<i class="fa-solid fa-globe"></i>
+					<p>967</p>
+					<p>ONLINE COURSES</p>
+					</span>
+
+					<span>
+					<i class="fa-regular fa-registered"></i>
+					<p>967</p>
+					<p>REGISTERED STUDENTS</p>
+					</span>
+
+
+	</section>
+
+	<section class="main5">
+		<div>		
+				<h2 text align="center"> OUR TEAM</h2>
+				<p text align="center"> AchieversIT- Provides A Wide Group Of Opportunities For Freshers And Experienced Candidate Who Can
+		Develop Their Skills And Build Their Career Oppurtunities Across Multiple Companies  </p>
+	</div>
+</section>
+<section class="main6">
+		<div>
+			<img src="C:\Users\Admin\pic\team1.jpg">
+			<h3 text align="center">John</h3>
+			<p text align="center">Web Developer</p>
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-square-pinterest"></i>
+		</div>
+		<div>
+			<img src="C:\Users\Admin\pic\team2.jpg">
+			<h3 text align="center"> Anderson John</h3>
+			<p text align="center">Web Designer</p>
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-square-pinterest"></i>
+		</div>
+		<div>
+			<img src="C:\Users\Admin\pic\team3.jpg">
+			<h3 text align="center">Sarah Se</h3>
+			<p text align="center">Web Designer</p>
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-square-pinterest"></i>
+		</div>
+		<div>
+			<img src="C:\Users\Admin\pic\team4.jpg">
+			<h3 text align="center">Williams</h3>
+			<p text align="center">Web Developer</p>
+			<i class="fa-brands fa-square-facebook"></i>
+			<i class="fa-brands fa-square-instagram"></i>
+			<i class="fa-brands fa-linkedin"></i>
+			<i class="fa-brands fa-square-pinterest"></i>
+		</div>
+	</section>
+	<section class="main7">
+		<div>		
+				<h2 text align="center"> LATEST NEWS</h2>
+				<p text align="center"> More People Train With Achievers-IT Because Of The Quality,Placement Support and Real Time Training  </p>
+	</div>
+	<section class="main8">
+		<div>
+			<img src="C:\Users\Admin\pic\news1.jpg" width="380">
+			<h3 style="font-weight:normal">Easy UI Development learning way</h3>
+			<h5 style="font-weight:normal"> by <span style="color:red">admin </span>August 30, 2023</h5>
+			<p>We AchieversIT are here to assit you in gaining the best deal of knowledge and landing at your dream job. Freshers or Experienced, we always have a hope to hop into new domains and fields of quicken up the pace in our career growth</p>
+		</div>
+		<div>
+			<img src="C:\Users\Admin\pic\news2.jpg">
+			<h3 style="font-weight:normal">Offer Course starts from 1st September</h3>
+			<h6 style="font-weight:normal"> by <span style="color:red">admin </span>August 30, 2023</h6>
+			<p>We AchieversIT are here to assit you in gaining the best deal of knowledge and landing at your dream job. Freshers or Experienced, we always have a hope to hop into new domains and fields of quicken up the pace in our career growth</p>
+		</div>
+		<div>
+			<img src="C:\Users\Admin\pic\news3.jpg">
+			<h3 style="font-weight:normal">Guest Interview will occur soon</h3>
+			<h6 style="font-weight:normal"> by <span style="color:red">admin </span>August 30, 2023</h6>
+		<p>We AchieversIT are here to assit you in gaining the best deal of knowledge and landing at your dream job. Freshers or Experienced, we always have a hope to hop into new domains and fields of quicken up the pace in our career growth</p>
+		</div>
+		<br>
+	</section>
+	<br>
+</section>
+</main>
+<footer>
+<section class="Footer_portion">
+    <section>
+        <figure>
+            <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="Logo"/>
+            <figcaption>
+                AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidate who can develop their skills and build their career opportunities across multiple Companies.
+            </figcaption> 
+        </figure>
+    </section>
+    <section>
+        <h4>    Quick Links</h4>
+        <ul>
+            <li><a= href="">Home</a></li>
+            <li><a= href="">About Us</a></li>
+            <li><a= href="">Services</a></li>
+            <li><a= href="">Blog</a></li>
+            <li><a= href="">Contact Us</a></li>
+        </ul>
+    </section>
+    <section>
+        <h4>     Courses</h4>
+        <ul>
+        	<li><a= href="">UI Development</a></li>
+            <li><a= href="">Java Development</a></li>
+            <li><a= href="">Angular</a></li>
+            <li><a= href="">React</a></li>
+            <li><a= href="">PHP</a></li>
+        </ul>
+    </section>
+    <section>
+        <form>
+        	<h4>Contact Us</h4>
+        	<input type="email" name="" placeholder="Email"><br><br>
+        	<textarea placeholder="Message" rows="3" cols="18"></textarea><br>
+        	<input type="submit" name="" value="Submit">	
+        </form>
+    </section>
+</section>
+	<hr>
+	<div class="end">
+
+		<p text align="center"><span style="color:white"> &copy 2023 ALL Rights Reserved by</span> <span style="color:yellow"> ACHIEVERSIT.COM</span></p>
+		</div>	
+</footer>
+	
+</body>
+</html>
